@@ -1,4 +1,4 @@
-^\.github$
-^.*\.Rproj$
+^renv$
+^renv\.lock$
+^available-work\.Rproj$
 ^\.Rproj\.user$
-^LICENSE\.md$

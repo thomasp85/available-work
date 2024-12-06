@@ -1,11 +1,34 @@
-Type: project
+Type: batch
 Package: available-work
-Version: 1.0.0
-Imports:
-    gha (>= 0.0.0.9000),
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R:
+    person("Thomas Lin", "Pedersen", , "thomasp85@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-5147-4711"))
+Description: What the package does (one paragraph).
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Suggests:
+    devtools,
+    pak,
+    producethis
+Encoding: UTF-8
+Depends:
+    gha,
     httr2,
-    knitr,
     rvest
-Remotes:
-    r-lib/gha
-License: MIT
+Settings/GHA:
+    list(
+      result_branch = "gh-results",
+      output_dir = "output"
+    )
+Schedule: 
+    list(
+      minute = interval(15),
+      hour = NULL,
+      day = NULL,
+      weekday = NULL,
+      week = NULL,
+      month = NULL,
+      year = NULL
+    )
